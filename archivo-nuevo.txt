@@ -133,3 +133,18 @@ To github.com:mau-attitude/mi-primer-repo-oficial.git
 
 Mauricio@DESKTOP-RV3FF2B MINGW64 ~/MasterCoding/mi-primer-repo-oficial (main)
 $
+
+Mauricio@DESKTOP-RV3FF2B MINGW64 ~/MasterCoding/mi-primer-repo-oficial (main)
+$ git pull origin main
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 742 bytes | 4.00 KiB/s, done.
+From github.com:mau-attitude/mi-primer-repo-oficial
+ * branch            main       -> FETCH_HEAD
+   96119ac..3f4c224  main       -> origin/main
+Updating 96119ac..3f4c224
+Fast-forward
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
