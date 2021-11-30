@@ -1,0 +1,135 @@
+Mauricio@DESKTOP-RV3FF2B MINGW64 ~/MasterCoding/master-marvel-code (master)
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Mauricio/.ssh/id_rsa):
+Created directory '/c/Users/Mauricio/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Mauricio/.ssh/id_rsa
+Your public key has been saved in /c/Users/Mauricio/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:x8CtLF2kat+UsmsXJEkdxs64GVPmwdhIN/RJptCqHbc Mauricio@DESKTOP-RV3FF2B
+The key's randomart image is:
++---[RSA 3072]----+
+|       .oXB.o    |
+|       .+BX* .   |
+|       .+X+.o    |
+|       +O=*.     |
+|      +oSX=.     |
+|     ..o+*E      |
+|        o ..     |
+|        ...      |
+|       ...       |
++----[SHA256]-----+
+
+Mauricio@DESKTOP-RV3FF2B MINGW64 ~/MasterCoding/master-marvel-code (master)
+$ cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCzJWv3Q99lxi5cL90skrNcgmA9XKDqkMIYEQXhn7L7EgQp5gPgIhaSg5zgVPv38BZqq9aqy0d6uawo8rdMcUjQmfknLn0PMv3FbOWKoa2wNDIWwQ6xcszdhiK5VjcENVbCrhlcjV7MTeseTxw5FFVvjd8gfMHlILiSYZWsIKCuj3WqD6eqyjrOYDddk+F7pIs8SeP/TAYTRhfRO5204leSFfvUSzoFHYgp9uVhnhCeZyGKkXQgx+t+mOvG5A39vc1olzp2gO1TbJw5SWRp6iAuQxk0StaZ9EI/J9BabXENPvjSevbXaUk+xbTTbOBIZ32ueJS5eNLT821ImaBobRoP15IhUMpcHwL2t5N2qvNdqYx2jSB5paJFYuLWexDemJizfO+wy8rj/LnuFPj004S+XmEX18d+TP3Iq22o7P+QKuo2ieVZfJG3p2RsRbz63SVCwBcT9Mh+vlo3fXUjHamzAsKoqvN/l3ICLMECVFShKNn6xR8OUumqJtvfLbIoots= Mauricio@DESKTOP-RV3FF2B
+
+Mauricio@DESKTOP-RV3FF2B MINGW64 ~/MasterCoding/master-marvel-code (master)
+$ cd ..
+
+Mauricio@DESKTOP-RV3FF2B MINGW64 ~/MasterCoding (master)
+$ ls
+master-marvel-code/  mauwi-code/  prueba/
+
+Mauricio@DESKTOP-RV3FF2B MINGW64 ~/MasterCoding (master)
+$ git clone git@github.com:mau-attitude/mi-primer-repo-oficial.git
+Cloning into 'mi-primer-repo-oficial'...
+The authenticity of host 'github.com (140.82.112.3)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+Mauricio@DESKTOP-RV3FF2B MINGW64 ~/MasterCoding (master)
+$ ls
+master-marvel-code/  mauwi-code/  mi-primer-repo-oficial/  prueba/
+
+Mauricio@DESKTOP-RV3FF2B MINGW64 ~/MasterCoding (master)
+$ cd mi-primer-repo-oficial
+
+Mauricio@DESKTOP-RV3FF2B MINGW64 ~/MasterCoding/mi-primer-repo-oficial (main)
+$ touch archivo-nuevo.txt
+
+Mauricio@DESKTOP-RV3FF2B MINGW64 ~/MasterCoding/mi-primer-repo-oficial (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        archivo-nuevo.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Mauricio@DESKTOP-RV3FF2B MINGW64 ~/MasterCoding/mi-primer-repo-oficial (main)
+$ git add .
+
+Mauricio@DESKTOP-RV3FF2B MINGW64 ~/MasterCoding/mi-primer-repo-oficial (main)
+$ git commit -m "mi primer commit hacia github"
+[main 9772cd7] mi primer commit hacia github
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 archivo-nuevo.txt
+
+Mauricio@DESKTOP-RV3FF2B MINGW64 ~/MasterCoding/mi-primer-repo-oficial (main)
+$ git branch
+* main
+
+Mauricio@DESKTOP-RV3FF2B MINGW64 ~/MasterCoding/mi-primer-repo-oficial (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 304 bytes | 101.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:mau-attitude/mi-primer-repo-oficial.git
+   4f1cd7c..9772cd7  main -> main
+
+Mauricio@DESKTOP-RV3FF2B MINGW64 ~/MasterCoding/mi-primer-repo-oficial (main)
+$ touch archivo2.txt
+
+Mauricio@DESKTOP-RV3FF2B MINGW64 ~/MasterCoding/mi-primer-repo-oficial (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        archivo2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Mauricio@DESKTOP-RV3FF2B MINGW64 ~/MasterCoding/mi-primer-repo-oficial (main)
+$ git add .
+
+Mauricio@DESKTOP-RV3FF2B MINGW64 ~/MasterCoding/mi-primer-repo-oficial (main)
+$ git commit -m "agrega archivo2"
+[main a8a4257] agrega archivo2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 archivo2.txt
+
+Mauricio@DESKTOP-RV3FF2B MINGW64 ~/MasterCoding/mi-primer-repo-oficial (main)
+$ git log --oneline
+a8a4257 (HEAD -> main) agrega archivo2
+9772cd7 (origin/main, origin/HEAD) mi primer commit hacia github
+4f1cd7c Initial commit
+
+Mauricio@DESKTOP-RV3FF2B MINGW64 ~/MasterCoding/mi-primer-repo-oficial (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 292 bytes | 146.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:mau-attitude/mi-primer-repo-oficial.git
+   9772cd7..a8a4257  main -> main
+
+Mauricio@DESKTOP-RV3FF2B MINGW64 ~/MasterCoding/mi-primer-repo-oficial (main)
+$
